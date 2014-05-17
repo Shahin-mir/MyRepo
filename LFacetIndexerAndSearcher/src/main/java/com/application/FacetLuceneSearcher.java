@@ -80,7 +80,7 @@ public class FacetLuceneSearcher {
 				Analyzer analyzer = new MyLowerCaseKeywordAnalyzer();
 				MultiFieldQueryParser queryParser = new MultiFieldQueryParser(LUCENE_VERSION, new String[] { map.get(i) }, analyzer);
 				luceneQuery = queryParser.parse(fieldtoSearch);
-
+System.out.println("testing");
 			}// end for
 		} else {
 			System.out.println("Search : ");
